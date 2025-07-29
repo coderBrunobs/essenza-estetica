@@ -6,11 +6,13 @@ body {
       color: #333;
     }
     header {
-      background-color: #fce4ec;
+      background-color: #dddddd;
+      height: 40px;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      color: #c49c68;
     }
     nav a {
       margin-left: 20px;
@@ -19,8 +21,8 @@ body {
       font-weight: bold;
     }
     .banner {
-      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
-      height: 400px;
+      background: url('https://www.tecnicageracao.com.br/wp-content/uploads/2024/06/Post-de-blog-estetica-facial.jpg') center/cover no-repeat;
+      height: 900px;
       color: white;
       display: flex;
       flex-direction: column;
@@ -32,7 +34,7 @@ body {
       font-size: 2.5em;
       margin: 0;
     }
-    .banner button {
+    .button {
       margin-top: 20px;
       padding: 12px 24px;
       background-color: #c49c68;
@@ -41,6 +43,7 @@ body {
       font-weight: bold;
       cursor: pointer;
       border-radius: 5px;
+      text-decoration: none;
     }
     section {
       padding: 60px 40px;
