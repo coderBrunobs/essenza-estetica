@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -6,20 +11,53 @@ body {
       color: #333;
     }
     header {
-      background-color: #dddddd;
-      height: 40px;
+      background-color: #e8e0d5;
+      color: #b79b6b;
+      height: 50px;
       padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: #c49c68;
+      
+    }
+
+    header h2 {
+      flex: 1 1 100%;
+      font-size: 1.5rem;
+      word-break: break-word;
+    }
+
+
+    h2 a#teste {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
     }
     nav a {
       margin-left: 20px;
       text-decoration: none;
-      color: #c49c68;
+      color: #b79b6a;
       font-weight: bold;
+      
     }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+
     .banner {
       background: url('https://www.tecnicageracao.com.br/wp-content/uploads/2024/06/Post-de-blog-estetica-facial.jpg') center/cover no-repeat;
       height: 900px;
@@ -34,10 +72,10 @@ body {
       font-size: 2.5em;
       margin: 0;
     }
-    .button {
+    button {
       margin-top: 20px;
       padding: 12px 24px;
-      background-color: #c49c68;
+      background-color: #ceb37e;
       border: none;
       color: white;
       font-weight: bold;
@@ -52,6 +90,39 @@ body {
       justify-content: center;
       align-items: center;
       text-align: center;
+      gap: 20px;
+    }
+
+    #section-sobre{
+      background-color: #e8e0d5;
+    }
+
+    .div-sobre{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sobre-item{
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    #sobre-texto{
+      text-align: left;
+      max-width: 700px;
+      margin: auto 2rem; /* espaçamento lateral */
+    }
+
+    #sobre-img{
+      border-radius: 10px;
+      width: 70%;
+    }
+
+    #section-benefits{
+      background-color: #e0d6d3;
     }
     
     .benefits, .services, .gallery {
@@ -59,14 +130,15 @@ body {
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
+      padding: 20px;
     }
     .card {
       background-color: #c49c68;
       border: none;
       color: white;
       padding: 20px;
-      width: 250px;
-      border-radius: 8px;
+      width: 100%;
+      border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
     }
@@ -76,6 +148,12 @@ body {
       object-fit: cover;
       border-radius: 8px;
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
     form {
       max-width: 500px;
       margin: auto;
@@ -89,16 +167,106 @@ body {
       border: 1px solid #ccc;
     }
     form button {
-      background-color: #c49c68;
-      color: white;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ceb37e;
       border: none;
-      padding: 12px;
+      color: white;
       font-weight: bold;
       cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
     }
     footer {
-      background-color: #fce4ec;
+      background-color: #e8e0d5;
       padding: 20px;
       text-align: center;
       font-size: 0.9em;
     }
+
+    
+  @media (max-width: 768px) {
+
+      header h2 {
+        flex: 1 1 100%;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 150px;
+        text-align: center;
+      }
+      
+      nav a {
+        margin: 10px;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    
+
+    .banner {
+      background: url('https://www.tecnicageracao.com.br/wp-content/uploads/2024/06/Post-de-blog-estetica-facial.jpg') center/cover no-repeat;
+      height: 700px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .div-sobre{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      
+    #sobre-texto{
+      text-align: center;
+    }
+    .card {
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    
+}
+
+
+
+

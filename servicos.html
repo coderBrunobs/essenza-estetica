@@ -9,8 +9,13 @@
 <body>
 
   <header>
-    <h2>Essenza Estética</h2>
-    <nav>
+    <h2><a id="teste" href="index.html">Essenza Estética</a></h2>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="servicos.html">Serviços</a>
       <a href="galeria.html">Galeria</a>
@@ -18,7 +23,7 @@
     </nav>
   </header>
     
-    <section id="servicos">
+    <section class="section" id="servicos">
         <h2>Nossos Serviços</h2>
         <div class="services">
             <div class="card">
@@ -40,4 +45,12 @@
         </div>
     </section>
 
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("show");
+    });
+  </script>
 </body>

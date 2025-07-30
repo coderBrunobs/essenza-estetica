@@ -10,8 +10,14 @@
 
   <!-- Cabeçalho -->
   <header>
-    <h2>Essenza Estética</h2>
-    <nav>
+    <h2><a id="teste" href="index.html">Essenza Estética</a></h2>
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="servicos.html">Serviços</a>
       <a href="galeria.html">Galeria</a>
@@ -19,23 +25,25 @@
     </nav>
   </header>
 
-  <!-- Banner Principal -->
   <div class="banner" id="home">
     <h1>Realce sua beleza natural</h1>
     <p>Com tecnologia e cuidado personalizado</p>
-    <a href="contato.html" class="button">Agende sua avaliação</a>
+    <button ><a href="contato.html"></a>Agende a sua avaliação</button>
   </div>
 
-  <!-- Sobre -->
-  <section>
-    <div class="section-sobre">
-      <h2>Sobre a Clínica</h2>
-      <p>A Essenza Estética oferece tratamentos modernos com profissionais experientes, tecnologia de ponta e um ambiente acolhedor. Nosso foco é cuidar da sua autoestima e bem-estar.</p>
+  <section class="section" id="section-sobre">
+    <h2>Sobre a Clínica</h2>
+    <div class="div-sobre">
+      <div class="sobre-item" id="sobre-texto">
+        <p>A Essenza Estética oferece tratamentos modernos com profissionais experientes, tecnologia de ponta e um ambiente acolhedor. Nosso foco é cuidar da sua autoestima e bem-estar.</p>
+      </div>
+      <div class="sobre-item" >
+        <img id="sobre-img" src="https://i.pinimg.com/1200x/79/e3/97/79e397513080f0f678df9a6394ba54c6.jpg" alt="Foto da clínica de estética">
+      </div>
     </div>
   </section>
 
-  <!-- Benefícios -->
-  <section>
+  <section class="section" id="section-benefits">
     <h2>Por que nos escolher?</h2>
     <div class="benefits">
       <div class="card">Atendimento Personalizado</div>
@@ -44,11 +52,19 @@
       <div class="card">Ambiente Acolhedor</div>
     </div>
   </section>
-  
-  <!-- Rodapé -->
+
   <footer>
     <p>© 2025 Essenza Estética • Rua Fictícia, 123 - Belo Horizonte/MG • WhatsApp: (31) 99999-9999</p>
   </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("show");
+    });
+  </script>
 
 </body>
 </html>

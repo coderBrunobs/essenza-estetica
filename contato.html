@@ -9,16 +9,21 @@
 <body>
 
     <header>
-        <h2>Essenza Estética</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="galeria.html">Galeria</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+    <h2><a id="teste" href="index.html">Essenza Estética</a></h2>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-    <section id="contato">
+    <section class="section" id="contato">
         <h2>Fale Conosco</h2>
         <form>
             <input type="text" placeholder="Seu nome" required>
@@ -28,4 +33,13 @@
             <button type="submit">Enviar Mensagem</button>
         </form>
     </section>
+
+    <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("show");
+    });
+  </script>
 </body>
