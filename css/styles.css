@@ -11,6 +11,7 @@ body {
       color: #333;
     }
     header {
+      font-family: 'Satisfy', cursive;
       background-color: #e8e0d5;
       color: #b79b6b;
       height: 50px;
@@ -21,13 +22,7 @@ body {
       
     }
 
-    header h2 {
-      flex: 1 1 100%;
-      font-size: 1.5rem;
-      word-break: break-word;
-    }
-
-
+    
     h2 a#teste {
       text-decoration: none;
       color: inherit;
