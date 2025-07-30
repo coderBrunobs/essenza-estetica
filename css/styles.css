@@ -249,7 +249,8 @@ body {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      
+    }
+
     #sobre-texto{
       text-align: center;
     }
@@ -266,6 +267,7 @@ body {
     }
     
 }
+
 
 
 
